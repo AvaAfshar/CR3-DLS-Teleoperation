@@ -18,12 +18,15 @@ The repository contains the following Python scripts:
 - `validate_fk.py` — Numerical validation of the forward kinematics implementation.
 - `validate_jacobian.py` — Numerical validation of the analytical Jacobian using finite differences.
 -  `validate_ik.py` — Multi-pose numerical validation of the DLS in inverse kinematics solver.
+-  `test_singularity.py` — SVD-based search for a near-singular CR3 configuration for evaluating DLS robustness.
+- `cr3_ik_sim.py` — ROS 2 simulation of the CR3 DLS inverse kinematics controller, including Cartesian target generation, IK solution and joint trajectory execution in RViz.
 
 ## Validation
 
 The kinematic implementation was validated numerically before integration into the teleoperation framework.
 
 DH model,Forward kinematics,Jacobian, and inverse kinemtics validation scripts are included to allow the numerical results reported in the dissertation to be reproduced.
+The DLS solver was subsequently evaluated in ROS 2/RViz using both a nominal Cartesian displacement test and a near-singular configuration identified through singular value decomposition (SVD). The simulation scripts reproduce the experiments and results presented in the dissertation.
 
 ## Requirements
 
