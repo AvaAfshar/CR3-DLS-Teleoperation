@@ -17,12 +17,13 @@ The repository contains the following Python scripts:
 - `validate_DH.py` — Validation of the adopted Denavit-Hartenberg kinematic model.
 - `validate_fk.py` — Numerical validation of the forward kinematics implementation.
 - `validate_jacobian.py` — Numerical validation of the analytical Jacobian using finite differences.
+-  `validate_ik.py` — Multi-pose numerical validation of the DLS in inverse kinematics solver.
 
 ## Validation
 
 The kinematic implementation was validated numerically before integration into the teleoperation framework.
 
-Forward kinematics and Jacobian validation scripts are included to allow the numerical results reported in the dissertation to be reproduced.
+DH model,Forward kinematics,Jacobian, and inverse kinemtics validation scripts are included to allow the numerical results reported in the dissertation to be reproduced.
 
 ## Requirements
 
